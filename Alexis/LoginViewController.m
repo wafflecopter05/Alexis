@@ -10,7 +10,7 @@
 
 
 @implementation LoginViewController
-@synthesize user, pass, username, password, temppass, tempuser, loginInfo;
+@synthesize user, pass, username, password, temppass, tempuser, loginInfo, login;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,9 +42,36 @@
     
     // Imports the LoginInfo.plist file, which contains the login info.
     // NEED TO DO: Assign the values from the dictionary to the appropriate username/password variables.
-    loginInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]];
+   // WHY?!?!?!?!?!?!?!?!?! loginInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]];
+    
     
     // Do any additional setup after loading the view from its nib.
+}
+
+- (BOOL) login
+{
+    login = false;
+    if (user.text == @"foo" && pass.text == @"foopass") {
+        login = true;
+    }
+    return login;
+}
+
+- (IBAction) moveOn
+{
+    if (login == TRUE) {
+        ProblemViewController *problemVC = [[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil];
+        
+        [problemVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
+        
+       // [self.window addSubview:loginVC.view];
+        
+       // [self.window makeKeyAndVisible];
+    }
+    else{
+        username.text = @"Incorrect User Name";
+        password.text = @"Incorrect Password";
+    }
 }
 
 - (void)viewDidUnload

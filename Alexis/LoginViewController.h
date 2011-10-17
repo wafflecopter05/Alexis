@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProblemViewController.h"
 
 // NEEDS CLARIFICATION: What are username, password, tempuser, temppass being used for? I'm assuming user/pass
 // is for text boxes (obviously), and tempuser/temppass are from the imported dictionary file? What is
@@ -17,7 +18,10 @@
     UITextField *user,  *pass;
     NSString *tempuser, *temppass;
     NSDictionary *loginInfo;
-}
+    BOOL login;
+}    
+    
+-(BOOL) login;
 
 // IN XIB: In File's Owner, I linked user/pass to the text fields.
 @property (nonatomic, retain) UILabel *username;
@@ -27,5 +31,6 @@
 @property (nonatomic, retain) NSString *tempuser;
 @property (nonatomic, retain) NSString *temppass;
 @property (nonatomic, retain) NSDictionary *loginInfo;
+@property (nonatomic, readwrite) BOOL login;
 
 @end

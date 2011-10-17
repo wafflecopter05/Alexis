@@ -12,6 +12,8 @@
 		D84F9E1114439C4300808789 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F9E0F14439C4300808789 /* LoginViewController.xib */; };
 		D84F9E1614439C5300808789 /* ProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F9E1414439C5300808789 /* ProblemViewController.m */; };
 		D84F9E1714439C5300808789 /* ProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F9E1514439C5300808789 /* ProblemViewController.xib */; };
+		D864442A144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8644428144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg */; };
+		D864442B144CD1A5000D4DF5 /* Nebula_012.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8644429144CD1A5000D4DF5 /* Nebula_012.jpeg */; };
 		D8F4170B144396350055CBCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F4170A144396350055CBCF /* UIKit.framework */; };
 		D8F4170D144396350055CBCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F4170C144396350055CBCF /* Foundation.framework */; };
 		D8F4170F144396350055CBCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F4170E144396350055CBCF /* CoreGraphics.framework */; };
@@ -45,6 +47,8 @@
 		D84F9E1314439C5300808789 /* ProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemViewController.h; sourceTree = "<group>"; };
 		D84F9E1414439C5300808789 /* ProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemViewController.m; sourceTree = "<group>"; };
 		D84F9E1514439C5300808789 /* ProblemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProblemViewController.xib; sourceTree = "<group>"; };
+		D8644428144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hst_lagoon_detail.jpeg; sourceTree = "<group>"; };
+		D8644429144CD1A5000D4DF5 /* Nebula_012.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nebula_012.jpeg; sourceTree = "<group>"; };
 		D8F41706144396350055CBCF /* Alexis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alexis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F4170A144396350055CBCF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8F4170C144396350055CBCF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,6 +141,8 @@
 		D8F41711144396350055CBCF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8644428144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg */,
+				D8644429144CD1A5000D4DF5 /* Nebula_012.jpeg */,
 				D8F41712144396350055CBCF /* Alexis-Info.plist */,
 				D8F41713144396350055CBCF /* InfoPlist.strings */,
 				D8F41716144396350055CBCF /* Alexis-Prefix.pch */,
@@ -238,6 +244,8 @@
 				D84F9E1114439C4300808789 /* LoginViewController.xib in Resources */,
 				D84F9E1714439C5300808789 /* ProblemViewController.xib in Resources */,
 				C0FCBBA5144C9E870070618D /* LoginInfo.plist in Resources */,
+				D864442A144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg in Resources */,
+				D864442B144CD1A5000D4DF5 /* Nebula_012.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
