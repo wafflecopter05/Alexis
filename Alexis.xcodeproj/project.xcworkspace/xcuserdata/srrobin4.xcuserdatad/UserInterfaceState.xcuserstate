@@ -1986,9 +1986,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>340566302.56781399</real>
+		<real>340566205.69696301</real>
 		<string>{0, 1039}</string>
-		<string>{1039, 0}</string>
+		<string>{663, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3307,7 +3307,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>426</integer>
+					<integer>427</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3945,7 +3945,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>392</integer>
+					<integer>393</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3957,11 +3957,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>417</integer>
+					<integer>418</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>425</integer>
+					<integer>426</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4300,7 +4300,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>390</integer>
+					<integer>391</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4374,7 +4374,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>318</integer>
+					<integer>388</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4386,7 +4386,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>388</integer>
+					<integer>389</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4529,9 +4529,10 @@
 				</dict>
 			</array>
 		</dict>
-		<real>340566302.56905901</real>
+		<real>340566205.69831097</real>
 		<string>{0, 1039}</string>
-		<string>{1039, 0}</string>
+		<string>{663, 0}</string>
+		<string>@interface LoginViewController</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4546,7 +4547,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>389</integer>
+				<integer>390</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/ASUuser/Desktop/alexis494/Alexis/LoginViewController.h</string>
@@ -4560,7 +4561,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>391</integer>
+					<integer>392</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4573,10 +4574,6 @@
 			</dict>
 			<key>NS.keys</key>
 			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>393</integer>
-				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>394</integer>
@@ -4597,6 +4594,10 @@
 					<key>CF$UID</key>
 					<integer>398</integer>
 				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>399</integer>
+				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
@@ -4606,11 +4607,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>399</integer>
+					<integer>400</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>401</integer>
+					<integer>402</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4618,11 +4619,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>403</integer>
+					<integer>404</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>411</integer>
+					<integer>412</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4642,7 +4643,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>400</integer>
+					<integer>401</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
@@ -4664,7 +4665,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>402</integer>
+					<integer>403</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
@@ -4693,7 +4694,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>404</integer>
+					<integer>405</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4707,11 +4708,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>405</integer>
+					<integer>406</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>408</integer>
+					<integer>409</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4736,11 +4737,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>406</integer>
+					<integer>407</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>407</integer>
+					<integer>408</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4767,11 +4768,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>409</integer>
+					<integer>410</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>410</integer>
+					<integer>411</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4794,7 +4795,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>412</integer>
+					<integer>413</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4808,11 +4809,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>413</integer>
+					<integer>414</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>415</integer>
+					<integer>416</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4837,11 +4838,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>406</integer>
+					<integer>407</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>414</integer>
+					<integer>415</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4867,11 +4868,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>409</integer>
+					<integer>410</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>416</integer>
+					<integer>417</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4893,7 +4894,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>418</integer>
+					<integer>419</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4907,11 +4908,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>419</integer>
+					<integer>420</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>422</integer>
+					<integer>423</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4936,11 +4937,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>420</integer>
+					<integer>421</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>421</integer>
+					<integer>422</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4967,11 +4968,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>423</integer>
+					<integer>424</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>424</integer>
+					<integer>425</integer>
 				</dict>
 			</array>
 		</dict>
