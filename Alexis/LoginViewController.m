@@ -10,6 +10,7 @@
 
 
 @implementation LoginViewController
+@synthesize user, pass, username, password, temppass, tempuser, loginInfo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,6 +39,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Imports the LoginInfo.plist file, which contains the login info.
+    // NEED TO DO: Assign the values from the dictionary to the appropriate username/password variables.
+    loginInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]];
+    
     // Do any additional setup after loading the view from its nib.
 }
 

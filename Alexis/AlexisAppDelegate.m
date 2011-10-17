@@ -15,6 +15,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // DONE: Created the initial LoginViewController and rendered it to the home screen on app launch.
+    
+    LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    
+    [loginVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
+    
+    [self.window addSubview:loginVC.view];
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;

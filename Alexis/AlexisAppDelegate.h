@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginViewController.h"
 
 @interface AlexisAppDelegate : NSObject <UIApplicationDelegate> {
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0FCBBA5144C9E870070618D /* LoginInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0FCBBA4144C9E870070618D /* LoginInfo.plist */; };
 		D84F9E1014439C4300808789 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F9E0E14439C4300808789 /* LoginViewController.m */; };
 		D84F9E1114439C4300808789 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F9E0F14439C4300808789 /* LoginViewController.xib */; };
 		D84F9E1614439C5300808789 /* ProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F9E1414439C5300808789 /* ProblemViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0FCBBA4144C9E870070618D /* LoginInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoginInfo.plist; sourceTree = "<group>"; };
 		D84F9E0D14439C4300808789 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D84F9E0E14439C4300808789 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D84F9E0F14439C4300808789 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				D8F41713144396350055CBCF /* InfoPlist.strings */,
 				D8F41716144396350055CBCF /* Alexis-Prefix.pch */,
 				D8F41717144396350055CBCF /* main.m */,
+				C0FCBBA4144C9E870070618D /* LoginInfo.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				D8F4171E144396350055CBCF /* MainWindow.xib in Resources */,
 				D84F9E1114439C4300808789 /* LoginViewController.xib in Resources */,
 				D84F9E1714439C5300808789 /* ProblemViewController.xib in Resources */,
+				C0FCBBA5144C9E870070618D /* LoginInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
