@@ -10,7 +10,14 @@
 
 
 @implementation LoginViewController
-@synthesize user, pass, username, password, temppass, tempuser, loginInfo, login;
+@synthesize user, pass, username, password, temppass, tempuser, loginInfo, login, window;
+
+bool login = true;
+
+-(IBAction) hideKeyboard
+{
+    [self resignFirstResponder];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -57,22 +64,19 @@
     return login;
 }
 
-- (IBAction) moveOn
+- (IBAction) moveToProblem
 {
+   // login = bool login();
     if (login == TRUE) {
-        ProblemViewController *problemVC = [[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil];
         
-        [problemVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
-        
-       // [self.window addSubview:loginVC.view];
-        
-       // [self.window makeKeyAndVisible];
     }
     else{
         username.text = @"Incorrect User Name";
         password.text = @"Incorrect Password";
+        
     }
 }
+
 
 - (void)viewDidUnload
 {
@@ -85,6 +89,18 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    ProblemViewController *problemVC = [[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil];
+    
+    [problemVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
+    
+    [self.window addSubview:problemVC.view];
+    
+    [self.window makeKeyAndVisible];
+    return YES;
 }
 
 @end

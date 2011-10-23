@@ -8,20 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "ProblemViewController.h"
+#import "AlexisAppDelegate.h"
 
 // NEEDS CLARIFICATION: What are username, password, tempuser, temppass being used for? I'm assuming user/pass
 // is for text boxes (obviously), and tempuser/temppass are from the imported dictionary file? What is
 // username/password for?
 
 @interface LoginViewController : UIViewController {
-    UILabel *username, *password;
-    UITextField *user,  *pass;
+    IBOutlet UILabel *username, *password;
+    IBOutlet UITextField *user,  *pass;
     NSString *tempuser, *temppass;
     NSDictionary *loginInfo;
     BOOL login;
 }    
     
--(BOOL) login;
+-(BOOL) moveToProblem;
+-(IBAction) hideKeyboard;
 
 // IN XIB: In File's Owner, I linked user/pass to the text fields.
 @property (nonatomic, retain) UILabel *username;
@@ -32,5 +34,6 @@
 @property (nonatomic, retain) NSString *temppass;
 @property (nonatomic, retain) NSDictionary *loginInfo;
 @property (nonatomic, readwrite) BOOL login;
+@property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @end
