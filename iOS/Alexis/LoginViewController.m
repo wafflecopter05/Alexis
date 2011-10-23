@@ -10,9 +10,9 @@
 
 
 @implementation LoginViewController
-@synthesize user, pass, username, password, temppass, tempuser, loginInfo, login, window;
+@synthesize user, pass, username, password, temppass, tempuser, loginInfo, _login, window;
 
-bool login = true;
+bool _login = YES;
 
 -(IBAction) hideKeyboard
 {
@@ -41,7 +41,6 @@ bool login = true;
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
@@ -57,23 +56,24 @@ bool login = true;
 
 - (BOOL) login
 {
-    login = false;
+    _login = NO;
     if (user.text == @"foo" && pass.text == @"foopass") {
-        login = true;
+        _login = YES;
     }
-    return login;
+    return _login;
 }
 
-- (IBAction) moveToProblem
+- (IBAction) loginPressed
 {
-   // login = bool login();
-    if (login == TRUE) {
-        
+    if (_login == YES) {
+        ProblemViewController *problemVC = [[[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil] autorelease];
+        [window addSubview:problemVC.view];
     }
     else{
         username.text = @"Incorrect User Name";
         password.text = @"Incorrect Password";
-        
+        ProblemViewController *problemVC = [[[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil] autorelease];
+        [window addSubview:problemVC.view];
     }
 }
 

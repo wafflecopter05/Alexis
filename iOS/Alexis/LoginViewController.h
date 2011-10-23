@@ -19,10 +19,11 @@
     IBOutlet UITextField *user,  *pass;
     NSString *tempuser, *temppass;
     NSDictionary *loginInfo;
-    BOOL login;
+    BOOL _login;
 }    
     
--(BOOL) moveToProblem;
+-(BOOL) login;
+-(IBAction) loginPressed;
 -(IBAction) hideKeyboard;
 
 // IN XIB: In File's Owner, I linked user/pass to the text fields.
@@ -33,7 +34,7 @@
 @property (nonatomic, retain) NSString *tempuser;
 @property (nonatomic, retain) NSString *temppass;
 @property (nonatomic, retain) NSDictionary *loginInfo;
-@property (nonatomic, readwrite) BOOL login;
+@property (nonatomic, readwrite) BOOL _login;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
 @end
