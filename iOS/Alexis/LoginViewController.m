@@ -46,11 +46,8 @@ BOOL _login = YES;
 {
     [super viewDidLoad];
     
-    // Imports the LoginInfo.plist file, which contains the login info.
-    // NEED TO DO: Assign the values from the dictionary to the appropriate username/password variables.
-    // WHY?!?!?!?!?!?!?!?!?! loginInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]];
-    // Copy values from dictionary into user/pass arrays -> compare login info to every value of array for login combinations -> ????? -> PROFIT!
-    
+    // Moves contents of plist file into loginInfo dictionary, which we will use in the login method to check for valid login info
+    self.loginInfo = [[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]] autorelease];
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -58,9 +55,30 @@ BOOL _login = YES;
 - (void) login
 {
     _login = false;
+    
+    NSString *userIn = user.text;
+    NSString *passIn = pass.text;
+    
+    @try {
+        _login = [passIn isEqualToString:[self.loginInfo objectForKey:(userIn)]];
+    }
+    @catch (NSException *exception) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Dictionary Error"
+                              message: @"Error matching key/value"
+                              delegate: nil
+                              cancelButtonTitle:@"Well, eff."
+                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    
+    // Old login code commented out below 
+    /*
     if ([user.text isEqualToString:@"foo"] && [pass.text isEqualToString:@"foopass"]) {
         _login = true;
     }
+    */
 }
 
 - (IBAction) loginPressed
