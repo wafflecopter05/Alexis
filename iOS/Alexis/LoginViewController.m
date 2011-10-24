@@ -71,7 +71,14 @@ BOOL _login = YES;
         [[self navigationController] pushViewController:problemVC animated:YES];
     }
     else{
-        
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Authentication Failure"
+                              message: @"You entered an incorrect username and/or password."
+                              delegate: nil
+                              cancelButtonTitle:@"I'll try again. :("
+                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
     }
 }
 

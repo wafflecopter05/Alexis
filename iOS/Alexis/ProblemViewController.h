@@ -13,4 +13,6 @@
     
 }
 
+-(IBAction) hideKeyboard;
+
 @end
