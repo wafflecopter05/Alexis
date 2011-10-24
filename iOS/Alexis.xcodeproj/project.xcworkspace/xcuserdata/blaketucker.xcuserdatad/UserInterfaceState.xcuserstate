@@ -1213,8 +1213,8 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
 		<false/>
-		<real>341029787.091515</real>
-		<string>{0, 1257}</string>
+		<real>341121685.74264199</real>
+		<string>{0, 1327}</string>
 		<string>{293, 0}</string>
 		<string>public.objective-c-source</string>
 		<dict>
@@ -1259,7 +1259,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {920, 719}}</string>
+		<string>{{0, 0}, {920, 741}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1394,7 +1394,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>138</integer>
+					<integer>141</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4701,8 +4701,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>341029787.08824998</real>
-		<string>{0, 1257}</string>
+		<real>341121685.73973602</real>
+		<string>{0, 1327}</string>
 		<string>{293, 0}</string>
 		<dict>
 			<key>$class</key>
@@ -5997,7 +5997,7 @@
 		<string>IDEActivityReportStringSegmentType</string>
 		<string>IDEActivityReportStringSegmentTimeStyle</string>
 		<string>IDEActivityReportStringSegmentDate</string>
-		<string>Today at 7:29 PM</string>
+		<string>Yesterday at 7:29 PM</string>
 		<real>3</real>
 		<dict>
 			<key>$class</key>
