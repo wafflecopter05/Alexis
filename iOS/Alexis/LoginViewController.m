@@ -48,7 +48,8 @@ BOOL _login = YES;
     
     // Imports the LoginInfo.plist file, which contains the login info.
     // NEED TO DO: Assign the values from the dictionary to the appropriate username/password variables.
-   // WHY?!?!?!?!?!?!?!?!?! loginInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]];
+    // WHY?!?!?!?!?!?!?!?!?! loginInfo = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]];
+    // Copy values from dictionary into user/pass arrays -> compare login info to every value of array for login combinations -> ????? -> PROFIT!
     
     
     // Do any additional setup after loading the view from its nib.
