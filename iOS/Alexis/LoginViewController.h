@@ -22,7 +22,7 @@
     BOOL _login;
 }    
     
--(BOOL) login;
+-(void) login;
 -(IBAction) loginPressed;
 -(IBAction) hideKeyboard;
 

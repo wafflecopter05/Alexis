@@ -12,7 +12,7 @@
 @implementation LoginViewController
 @synthesize user, pass, username, password, temppass, tempuser, loginInfo, _login, window;
 
-bool _login = YES;
+BOOL _login = YES;
 
 -(IBAction) hideKeyboard
 {
@@ -54,26 +54,24 @@ bool _login = YES;
     // Do any additional setup after loading the view from its nib.
 }
 
-- (BOOL) login
+- (void) login
 {
-    _login = NO;
-    if (user.text == @"foo" && pass.text == @"foopass") {
-        _login = YES;
+    _login = false;
+    if ([user.text isEqualToString:@"foo"] && [pass.text isEqualToString:@"foopass"]) {
+        _login = true;
     }
-    return _login;
 }
 
 - (IBAction) loginPressed
 {
-    if (_login == YES) {
+    [self login];
+    
+    if (_login == true) {
         ProblemViewController *problemVC = [[[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil] autorelease];
-        [window addSubview:problemVC.view];
+        [[self navigationController] pushViewController:problemVC animated:YES];
     }
     else{
-        username.text = @"Incorrect User Name";
-        password.text = @"Incorrect Password";
-        ProblemViewController *problemVC = [[[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil] autorelease];
-        [window addSubview:problemVC.view];
+        
     }
 }
 
@@ -90,17 +88,10 @@ bool _login = YES;
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+/*
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ProblemViewController *problemVC = [[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil];
-    
-    [problemVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
-    
-    [self.window addSubview:problemVC.view];
-    
-    [self.window makeKeyAndVisible];
     return YES;
 }
-
+*/
 @end

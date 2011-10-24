@@ -19,10 +19,11 @@
     
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     
-    [loginVC.view setFrame:[[UIScreen mainScreen] applicationFrame]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    [nav setNavigationBarHidden:YES];
     
-    [self.window addSubview:loginVC.view];
-    // Override point for customization after application launch.
+    [self.window addSubview:nav.view];
+
     [self.window makeKeyAndVisible];
     return YES;
 }
