@@ -85,7 +85,29 @@ BOOL _login = YES;
 {
     [self login];
     
-    if (_login == true) {
+    if ([user.text isEqual:@""]){
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"No Username"
+                              message: @"Please enter a username."
+                              delegate: nil
+                              cancelButtonTitle:@"Ok :("
+                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    
+    else if ([pass.text isEqual:@""]){
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"No Password"
+                              message: @"Please enter a password."
+                              delegate: nil
+                              cancelButtonTitle:@"Ok :("
+                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    
+    else if (_login == true) {
         ProblemViewController *problemVC = [[[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil] autorelease];
         [[self navigationController] pushViewController:problemVC animated:YES];
     }
