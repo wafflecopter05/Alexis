@@ -1,0 +1,7 @@
+Features:
+- Menu-based navigation for various problem types
+	- Problem types (for now): Text, picture, movie?
+- Create a sliding UI view on Problem View screen in order to avoid keyboard hiding issue.
+- Detection for blank login screen values (i.e. different messages for leaving user/pass empty)
+- Bringing the PHP/Python up to speed? (PLEASE?)
+- Problem browser (pick your own problem versus random?)
