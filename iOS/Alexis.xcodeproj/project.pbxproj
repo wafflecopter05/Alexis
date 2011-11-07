@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0367452146877540069DB84 /* PictureProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0367450146877540069DB84 /* PictureProblemViewController.m */; };
+		C0367453146877540069DB84 /* PictureProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0367451146877540069DB84 /* PictureProblemViewController.xib */; };
+		C0367456146879100069DB84 /* 280x187 placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0367455146879100069DB84 /* 280x187 placeholder.jpg */; };
 		C0FCBBA5144C9E870070618D /* LoginInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = C0FCBBA4144C9E870070618D /* LoginInfo.plist */; };
 		D80D9C95144F829C0045F550 /* AlexisLogin-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D80D9C94144F829C0045F550 /* AlexisLogin-1.jpg */; };
 		D80D9C97144F84FB0045F550 /* AlexisLogin-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D80D9C96144F84FB0045F550 /* AlexisLogin-2.jpg */; };
@@ -42,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C036744F146877540069DB84 /* PictureProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureProblemViewController.h; sourceTree = "<group>"; };
+		C0367450146877540069DB84 /* PictureProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureProblemViewController.m; sourceTree = "<group>"; };
+		C0367451146877540069DB84 /* PictureProblemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureProblemViewController.xib; sourceTree = "<group>"; };
+		C0367455146879100069DB84 /* 280x187 placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "280x187 placeholder.jpg"; sourceTree = "<group>"; };
 		C0FCBBA4144C9E870070618D /* LoginInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoginInfo.plist; sourceTree = "<group>"; };
 		D80D9C94144F829C0045F550 /* AlexisLogin-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AlexisLogin-1.jpg"; sourceTree = "<group>"; };
 		D80D9C96144F84FB0045F550 /* AlexisLogin-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "AlexisLogin-2.jpg"; sourceTree = "<group>"; };
@@ -138,6 +145,9 @@
 				D84F9E1314439C5300808789 /* ProblemViewController.h */,
 				D84F9E1414439C5300808789 /* ProblemViewController.m */,
 				D84F9E1514439C5300808789 /* ProblemViewController.xib */,
+				C036744F146877540069DB84 /* PictureProblemViewController.h */,
+				C0367450146877540069DB84 /* PictureProblemViewController.m */,
+				C0367451146877540069DB84 /* PictureProblemViewController.xib */,
 			);
 			path = Alexis;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 		D8F41711144396350055CBCF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0367455146879100069DB84 /* 280x187 placeholder.jpg */,
 				D8644428144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg */,
 				D80D9C96144F84FB0045F550 /* AlexisLogin-2.jpg */,
 				D80D9C94144F829C0045F550 /* AlexisLogin-1.jpg */,
@@ -254,6 +265,8 @@
 				D864442B144CD1A5000D4DF5 /* Nebula_012.jpeg in Resources */,
 				D80D9C95144F829C0045F550 /* AlexisLogin-1.jpg in Resources */,
 				D80D9C97144F84FB0045F550 /* AlexisLogin-2.jpg in Resources */,
+				C0367453146877540069DB84 /* PictureProblemViewController.xib in Resources */,
+				C0367456146879100069DB84 /* 280x187 placeholder.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +306,7 @@
 				D8F4171B144396350055CBCF /* AlexisAppDelegate.m in Sources */,
 				D84F9E1014439C4300808789 /* LoginViewController.m in Sources */,
 				D84F9E1614439C5300808789 /* ProblemViewController.m in Sources */,
+				C0367452146877540069DB84 /* PictureProblemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
