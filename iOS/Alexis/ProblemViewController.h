@@ -10,9 +10,10 @@
 
 
 @interface ProblemViewController : UIViewController {
-    
+    IBOutlet UIScrollView *scrollView;
 }
 
 -(IBAction) hideKeyboard;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 
 @end
