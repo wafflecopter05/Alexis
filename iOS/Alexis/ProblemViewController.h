@@ -11,9 +11,10 @@
 
 @interface ProblemViewController : UIViewController {
     IBOutlet UIScrollView *scrollView;
+    IBOutlet UITextField *answer;
 }
 
 -(IBAction) hideKeyboard;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-
+@property (nonatomic, retain) IBOutlet UITextField *answer;
 @end

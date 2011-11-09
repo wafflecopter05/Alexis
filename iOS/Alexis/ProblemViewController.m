@@ -11,6 +11,9 @@
 
 @implementation ProblemViewController
 @synthesize scrollView;
+@synthesize answer;
+
+
 
 -(IBAction) hideKeyboard
 {
@@ -45,6 +48,10 @@
 
 - (void)viewDidLoad
 {
+   
+    [scrollView setScrollEnabled:YES];
+    [scrollView setContentSize:CGSizeMake(320, 800)];
+   
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
