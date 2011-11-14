@@ -25,6 +25,7 @@
 -(void) login;
 -(IBAction) loginPressed;
 -(IBAction) hideKeyboard;
+-(IBAction) addUser;
 
 // IN XIB: In File's Owner, I linked user/pass to the text fields.
 @property (nonatomic, retain) UILabel *username;

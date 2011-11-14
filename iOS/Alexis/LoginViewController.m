@@ -142,4 +142,40 @@ BOOL _login = YES;
     return YES;
 }
 */
+
+-(IBAction) addUser
+{
+    UITextField *userBox;
+    UITextField *passBox;
+    
+    UIAlertView *prompt = [[UIAlertView alloc] initWithTitle:@"Add User" 
+                                                     message:@"\n\n\n" // makes room for text boxes
+                                                    delegate:nil 
+                                           cancelButtonTitle:@"Cancel" 
+                                           otherButtonTitles:@"Enter", nil];
+    
+    userBox = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 50.0, 260.0, 25.0)]; 
+    [userBox setBackgroundColor:[UIColor whiteColor]];
+    [userBox setPlaceholder:@"username"];
+    [prompt addSubview:userBox];
+    
+    passBox = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 85.0, 260.0, 25.0)]; 
+    [passBox setBackgroundColor:[UIColor whiteColor]];
+    [passBox setPlaceholder:@"password"];
+    [passBox setSecureTextEntry:YES];
+    [prompt addSubview:passBox];
+    
+    // set place
+    [prompt show];
+    [prompt release];
+    
+    // set cursor and show keyboard
+    [userBox becomeFirstResponder];
+    
+    // Add check for if username exists already. If it does, return a UIAlert and return to dialog box. TO DO.
+    // Don't forget to release userBox and passBox :)
+    
+    
+}
+
 @end
