@@ -108,8 +108,8 @@ BOOL _login = YES;
     }
     
     else if (_login == true) {
-        ProblemViewController *problemVC = [[[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:nil] autorelease];
-        [[self navigationController] pushViewController:problemVC animated:YES];
+        UserChoiceController *choiceVC = [[[UserChoiceController alloc] initWithNibName:@"UserChoiceController" bundle:nil] autorelease];
+        [[self navigationController] pushViewController:choiceVC animated:YES];
     }
     else{
         UIAlertView *alert = [[UIAlertView alloc]

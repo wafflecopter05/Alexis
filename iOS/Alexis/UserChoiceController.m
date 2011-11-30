@@ -55,7 +55,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return (sizeof viewArray);
+    return [viewArray count];
 }
 
 - (void)viewDidUnload
@@ -72,18 +72,20 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellID = @"Cell";
+    NSString *cellID = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellID];
     // Changed UITableView to Cell, check where tableView is supposed to point to (scope problems)
     
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID] autorelease];
     }
     
-    [cell.textLabel setText:[viewArray objectAtIndex:indexPath.row]];
-    
+    //for(int index; index < (sizeof(viewArray)); index++){
+        [cell.textLabel setText:[viewArray objectAtIndex:indexPath.row]];
+    //}
     return cell;
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
