@@ -74,7 +74,8 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellID = @"Cell";
     
-    UITableView *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    // Changed UITableView to Cell, check where tableView is supposed to point to (scope problems)
     
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID] autorelease];

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ProblemViewController.h"
 #import "AlexisAppDelegate.h"
+#import "UserChoiceController.h"
 
 // NEEDS CLARIFICATION: What are username, password, tempuser, temppass being used for? I'm assuming user/pass
 // is for text boxes (obviously), and tempuser/temppass are from the imported dictionary file? What is
