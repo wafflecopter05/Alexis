@@ -15,14 +15,14 @@
     IBOutlet UITableView *tableView;
              NSMutableArray *viewArray;
     
-    ProblemViewController *ProblemViewController;
-    PictureProblemViewController *PictureProblemViewController;
+    IBOutlet ProblemViewController *ProblemViewController;
+    IBOutlet PictureProblemViewController *PictureProblemViewController;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) NSMutableArray *viewArray;
-@property (nonatomic, retain) ProblemViewController *ProblemViewController;
-@property (nonatomic, retain) PictureProblemViewController *PictureProblemViewController;
+@property (nonatomic, retain) IBOutlet ProblemViewController *ProblemViewController;
+@property (nonatomic, retain) IBOutlet PictureProblemViewController *PictureProblemViewController;
 
 -(void) populateViewArray;
 

@@ -24,6 +24,7 @@
 
 - (void)dealloc
 {
+    [viewArray release];
     [super dealloc];
 }
 
@@ -91,20 +92,23 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            if (self.ProblemViewController == nil) {
-                ProblemViewController *view = [[ProblemViewController alloc] initWithNibName:@"ProblemViewController" bundle:[NSBundle mainBundle]];
-                [view release];
-            }
+            [self.navigationController pushViewController:self.ProblemViewController animated:YES];
             break;
         case 1:
-            if (self.PictureProblemViewController == nil) {
-                PictureProblemViewController *view = [[PictureProblemViewController alloc] initWithNibName:@"PictureProblemViewController" bundle:[NSBundle mainBundle]];
-                self.PictureProblemViewController = view;
-                [view release];
-            }
+            [self.navigationController pushViewController:self.PictureProblemViewController animated:YES];
             break;
         default:
+        {
+            UIAlertView *alert = [[UIAlertView alloc]
+                                  initWithTitle: @"Dictionary Error"
+                                  message: @"Error matching key/value"
+                                  delegate: nil
+                                  cancelButtonTitle:@"Well, eff."
+                                  otherButtonTitles:nil];
+            [alert show];
+            [alert release];
             break;
+        }
     }
 }
 
