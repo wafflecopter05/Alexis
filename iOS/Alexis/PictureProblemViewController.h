@@ -10,7 +10,12 @@
 
 
 @interface PictureProblemViewController : UIViewController {
-    
+    IBOutlet UITextField *answer;
 }
 
+
+@property (nonatomic, retain) IBOutlet UITextField *answer;
+-(IBAction) hideKeyboard;
+-(IBAction) submitAnswer;
+-(IBAction) backButton;
 @end

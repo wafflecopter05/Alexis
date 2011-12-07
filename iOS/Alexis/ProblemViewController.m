@@ -20,6 +20,37 @@
     [self resignFirstResponder];
 }
 
+-(IBAction) submitAnswer
+{
+    if([answer.text isEqualToString:@""]){
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"No Answer"
+                              message: @"Please enter an answer."
+                              delegate: nil
+                              cancelButtonTitle:@"Ok :("
+                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle: @"Thanks!"
+                              message: @"Answer submitted!"
+                              delegate: nil
+                              cancelButtonTitle:@"AWWWW YEAAAAA!"
+                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+        
+}
+
+-(IBAction) backButton
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,7 +81,7 @@
 {
    
     [scrollView setScrollEnabled:YES];
-    [scrollView setContentSize:CGSizeMake(320, 800)];
+    [scrollView setContentSize:CGSizeMake(320, 550)];
    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

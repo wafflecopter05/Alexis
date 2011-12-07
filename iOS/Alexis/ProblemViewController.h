@@ -15,6 +15,8 @@
 }
 
 -(IBAction) hideKeyboard;
+-(IBAction) submitAnswer;
+-(IBAction) backButton;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UITextField *answer;
 @end

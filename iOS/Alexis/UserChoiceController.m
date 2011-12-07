@@ -47,8 +47,8 @@
 }
 
 -(void)populateViewArray{
-    [viewArray addObject:@"Text-Based Problems"];
-    [viewArray addObject:@"Picture-Based Problems"];
+    [viewArray addObject:@"Text-Based Problem"];
+    [viewArray addObject:@"Picture-Based Problem"];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -92,23 +92,15 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
+            [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
             [self.navigationController pushViewController:self.ProblemViewController animated:YES];
             break;
         case 1:
+            [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
             [self.navigationController pushViewController:self.PictureProblemViewController animated:YES];
             break;
         default:
-        {
-            UIAlertView *alert = [[UIAlertView alloc]
-                                  initWithTitle: @"Dictionary Error"
-                                  message: @"Error matching key/value"
-                                  delegate: nil
-                                  cancelButtonTitle:@"Well, eff."
-                                  otherButtonTitles:nil];
-            [alert show];
-            [alert release];
             break;
-        }
     }
 }
 
