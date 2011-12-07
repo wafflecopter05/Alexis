@@ -4,9 +4,10 @@ ALEXIS
 Idea/Product conceived by the brains of Blake Tucker and Stevie Robinson
 UIs conceived by Tara Mendoza
 
-Alexis will be a full-blown passive collaboration app in time, but for now, we have a simple login screen that accepts select username/password combinations from a local dictionary file and moves to a problem view screen, which (in the future) will show a problem that a user can solve, a text box for a user to input a comment/solution, and a submit button. Right, the "Submit Answer" does nothing, but in the future, it will submit the user's input to a server.
+Alexis is a full-blown passive collaboration app. At the moment, it allows a user to log from predetermined login values stored in a local dictionary. From there, a menu is presented with placeholder problem examples, and each problem type will display a unique problem screen.
 
 Features to note include:
-- Login screen that displays an alert box upon incorrect login attempt.
-- Keyboard automatically hides on login screen when text boxes lose focus (tapped outside of)
-- Textbox placeholder for future problem statement area on problem view screen.
+- Login screen that denies invalid values
+- Table view of problems from an array
+- The ability to distinguish between problem types based on the menu selection.
+- Answers are only accepted if the answer field is filled with something; otherwise, it is rejected.
