@@ -17,6 +17,7 @@
 		D84F9E1114439C4300808789 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F9E0F14439C4300808789 /* LoginViewController.xib */; };
 		D84F9E1614439C5300808789 /* ProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F9E1414439C5300808789 /* ProblemViewController.m */; };
 		D84F9E1714439C5300808789 /* ProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84F9E1514439C5300808789 /* ProblemViewController.xib */; };
+		D85A9768148F3668003D191C /* Archer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D85A9767148F3668003D191C /* Archer.jpg */; };
 		D864442A144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8644428144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg */; };
 		D864442B144CD1A5000D4DF5 /* Nebula_012.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D8644429144CD1A5000D4DF5 /* Nebula_012.jpeg */; };
 		D8890C5B1471B981008D42A6 /* UserChoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8890C591471B981008D42A6 /* UserChoiceController.m */; };
@@ -60,6 +61,7 @@
 		D84F9E1314439C5300808789 /* ProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProblemViewController.h; sourceTree = "<group>"; };
 		D84F9E1414439C5300808789 /* ProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProblemViewController.m; sourceTree = "<group>"; };
 		D84F9E1514439C5300808789 /* ProblemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProblemViewController.xib; sourceTree = "<group>"; };
+		D85A9767148F3668003D191C /* Archer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Archer.jpg; sourceTree = "<group>"; };
 		D8644428144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hst_lagoon_detail.jpeg; sourceTree = "<group>"; };
 		D8644429144CD1A5000D4DF5 /* Nebula_012.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nebula_012.jpeg; sourceTree = "<group>"; };
 		D8890C581471B981008D42A6 /* UserChoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserChoiceController.h; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				C0367455146879100069DB84 /* 280x187 placeholder.jpg */,
+				D85A9767148F3668003D191C /* Archer.jpg */,
 				D8644428144CD1A5000D4DF5 /* hst_lagoon_detail.jpeg */,
 				D80D9C96144F84FB0045F550 /* AlexisLogin-2.jpg */,
 				D80D9C94144F829C0045F550 /* AlexisLogin-1.jpg */,
@@ -276,6 +279,7 @@
 				C0367453146877540069DB84 /* PictureProblemViewController.xib in Resources */,
 				C0367456146879100069DB84 /* 280x187 placeholder.jpg in Resources */,
 				D8890C5C1471B981008D42A6 /* UserChoiceController.xib in Resources */,
+				D85A9768148F3668003D191C /* Archer.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,13 @@
 
 
 @interface PictureProblemViewController : UIViewController {
+    IBOutlet UIScrollView *scrollView;
     IBOutlet UITextField *answer;
 }
 
 
 @property (nonatomic, retain) IBOutlet UITextField *answer;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 -(IBAction) hideKeyboard;
 -(IBAction) submitAnswer;
 -(IBAction) backButton;

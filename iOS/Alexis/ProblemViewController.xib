@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1056</int>
-		<string key="IBDocument.SystemVersion">10K540</string>
+		<string key="IBDocument.SystemVersion">10K549</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1306</string>
 		<string key="IBDocument.AppKitVersion">1038.36</string>
 		<string key="IBDocument.HIToolboxVersion">461.00</string>
@@ -12,14 +12,14 @@
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<string>IBUITextField</string>
 			<string>IBUIView</string>
 			<string>IBProxyObject</string>
-			<string>IBUILabel</string>
 			<string>IBUIImageView</string>
-			<string>IBUITextField</string>
-			<string>IBUITextView</string>
 			<string>IBUIScrollView</string>
 			<string>IBUIButton</string>
+			<string>IBUILabel</string>
+			<string>IBUITextView</string>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -53,7 +53,6 @@
 						<string key="NSFrame">{{126, 215}, {69, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -138,7 +137,20 @@
 								<bool key="IBUIMultipleTouchEnabled">YES</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<bool key="IBUIEditable">NO</bool>
-								<string key="IBUIText">Problems will be displayed here.</string>
+								<string type="base64-UTF8" key="IBUIText">LSh2b2lkKXRhYmxlVmlldzooVUlUYWJsZVZpZXcgKil0YWJsZVZpZXcgZGlkU2VsZWN0Um93QXRJbmRl
+eFBhdGg6KE5TSW5kZXhQYXRoICopaW5kZXhQYXRoewogICAgc3dpdGNoIChpbmRleFBhdGgucm93KSB7
+CiAgICAgICAgY2FzZSAwOgogICAgICAgICAgICBpZiAoc2VsZi5Qcm9ibGVtVmlld0NvbnRyb2xsZXIg
+PT0gbmlsKSB7CiAgICAgICAgICAgICAgICBQcm9ibGVtVmlld0NvbnRyb2xsZXIgKnZpZXcgPSBbW1By
+b2JsZW1WaWV3Q29udHJvbGxlciBhbGxvY10gaW5pdFdpdGhOaWJOYW1lOkAiUHJvYmxlbVZpZXdDb250
+cm9sbGVyIiBidW5kbGU6W05TQnVuZGxlIG1haW5CdW5kbGVdXTsKICAgICAgICAgICAgICAgIFt2aWV3
+IHJlbGVhc2VdOwogICAgICAgICAgICB9CiAgICAgICAgICAgIGJyZWFrOwogICAgICAgIGNhc2UgMToK
+ICAgICAgICAgICAgaWYgKHNlbGYuUGljdHVyZVByb2JsZW1WaWV3Q29udHJvbGxlciA9PSBuaWwpIHsK
+ICAgICAgICAgICAgICAgIFBpY3R1cmVQcm9ibGVtVmlld0NvbnRyb2xsZXIgKnZpZXcgPSBbW1BpY3R1
+cmVQcm9ibGVtVmlld0NvbnRyb2xsZXIgYWxsb2NdIGluaXRXaXRoTmliTmFtZTpAIlBpY3R1cmVQcm9i
+bGVtVmlld0NvbnRyb2xsZXIiIGJ1bmRsZTpbTlNCdW5kbGUgbWFpbkJ1bmRsZV1dOwogICAgICAgICAg
+ICAgICAgc2VsZi5QaWN0dXJlUHJvYmxlbVZpZXdDb250cm9sbGVyID0gdmlldzsKICAgICAgICAgICAg
+ICAgIFt2aWV3IHJlbGVhc2VdOwogICAgICAgICAgICB9CiAgICAgICAgICAgIGJyZWFrOwogICAgICAg
+IGRlZmF1bHQ6CiAgICAgICAgICAgIAogICAgICAgICAgICBicmVhazsKICAgIH0KfQ</string>
 								<reference key="IBUIFont" ref="131595697"/>
 								<object class="IBUITextInputTraits" key="IBUITextInputTraits">
 									<int key="IBUIAutocapitalizationType">2</int>
@@ -508,17 +520,19 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">ProblemViewController</string>
+					<string key="className">PictureProblemViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>backButton</string>
 							<string>hideKeyboard</string>
 							<string>submitAnswer</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -527,11 +541,74 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>backButton</string>
 							<string>hideKeyboard</string>
 							<string>submitAnswer</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">backButton</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">hideKeyboard</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">submitAnswer</string>
+								<string key="candidateClassName">id</string>
+							</object>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">answer</string>
+						<string key="NS.object.0">UITextField</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">answer</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">answer</string>
+							<string key="candidateClassName">UITextField</string>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/PictureProblemViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">ProblemViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>backButton</string>
+							<string>hideKeyboard</string>
+							<string>submitAnswer</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>backButton</string>
+							<string>hideKeyboard</string>
+							<string>submitAnswer</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">backButton</string>
+								<string key="candidateClassName">id</string>
+							</object>
 							<object class="IBActionInfo">
 								<string key="name">hideKeyboard</string>
 								<string key="candidateClassName">id</string>
