@@ -40,6 +40,7 @@
                               otherButtonTitles:nil];
         [alert show];
         [alert release];
+        [answer setText:@""];
         [self.navigationController popViewControllerAnimated:YES];
     }
 
