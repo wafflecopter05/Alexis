@@ -15,11 +15,11 @@
 // is for text boxes (obviously), and tempuser/temppass are from the imported dictionary file? What is
 // username/password for?
 
-@interface LoginViewController : UIViewController {
+@interface LoginViewController : UIViewController <UIAlertViewDelegate> {
     IBOutlet UILabel *username, *password;
-    IBOutlet UITextField *user,  *pass;
+    IBOutlet UITextField *user,  *pass, *userBox, *passBox;
     NSString *tempuser, *temppass;
-    NSDictionary *loginInfo;
+    NSMutableDictionary *loginInfo;
     BOOL _login;
 }    
     
@@ -33,9 +33,11 @@
 @property (nonatomic, retain) UILabel *password;
 @property (nonatomic, retain) IBOutlet UITextField *user;
 @property (nonatomic, retain) IBOutlet UITextField *pass;
+@property (nonatomic, retain) IBOutlet UITextField *userBox;
+@property (nonatomic, retain) IBOutlet UITextField *passBox;
 @property (nonatomic, retain) NSString *tempuser;
 @property (nonatomic, retain) NSString *temppass;
-@property (nonatomic, retain) NSDictionary *loginInfo;
+@property (nonatomic, retain) NSMutableDictionary *loginInfo;
 @property (nonatomic, readwrite) BOOL _login;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 

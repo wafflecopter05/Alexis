@@ -10,7 +10,7 @@
 
 
 @implementation LoginViewController
-@synthesize user, pass, username, password, temppass, tempuser, loginInfo, _login, window;
+@synthesize user, pass, username, password, userBox, passBox, temppass, tempuser, loginInfo, _login, window;
 
 BOOL _login = YES;
 
@@ -47,7 +47,7 @@ BOOL _login = YES;
     [super viewDidLoad];
     
     // Moves contents of plist file into loginInfo dictionary, which we will use in the login method to check for valid login info
-    self.loginInfo = [[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]] autorelease];
+    self.loginInfo = [[[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"LoginInfo" ofType:@"plist"]] autorelease];
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -145,12 +145,10 @@ BOOL _login = YES;
 
 -(IBAction) addUser
 {
-    UITextField *userBox;
-    UITextField *passBox;
     
     UIAlertView *prompt = [[UIAlertView alloc] initWithTitle:@"Add User" 
                                                      message:@"\n\n\n" // makes room for text boxes
-                                                    delegate:nil 
+                                                    delegate:self 
                                            cancelButtonTitle:@"Cancel" 
                                            otherButtonTitles:@"Enter", nil];
     
@@ -174,6 +172,41 @@ BOOL _login = YES;
     
     // Add check for if username exists already. If it does, return a UIAlert and return to dialog box. TO DO.
     // Don't forget to release userBox and passBox :)
+    
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if(buttonIndex == 1) {
+        if(![[loginInfo objectForKey:(userBox.text)] isEqual:nil]){
+            [loginInfo setValue:passBox.text forKey:userBox.text];
+            UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"Success!" 
+                                                             message:@"The user was added successfully!" // makes room for text boxes
+                                                            delegate:nil 
+                                                   cancelButtonTitle:@"Woo! :)"
+                                                   otherButtonTitles:nil];
+            [success show];
+            [success release];
+            [userBox setText:@""];
+            [passBox setText:@""];
+        }
+        else
+        {
+            UIAlertView *failure = [[UIAlertView alloc] initWithTitle:@"Failure!" 
+                                                              message:@"That username already exists..." // makes room for text boxes
+                                                             delegate:nil 
+                                                    cancelButtonTitle:@"Ok"
+                                                    otherButtonTitles:nil];
+            [failure show];
+            [failure release];
+            [userBox setText:@""];
+            [passBox setText:@""];
+        }
+    }
+    else
+    {
+    }
     
     
 }
